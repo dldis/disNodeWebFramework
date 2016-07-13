@@ -1,10 +1,20 @@
+/**
+ * Created by gaofei on 16/7/11.
+ */
+"use strict";
+var path = require('path');
 var express = require('express');
 var app = express();
 app.get('/',function(req,res) {
   res.send('hello world! success');
 });
 
+var logger = require('./minnow-core').framework.logger;
+global.log = new logger(path.join(__dirname,'logconfig.js')).log;
+
 app.get('/user',function(req,res) {
+  log.info('custom log module is called success!');
+  log.error('error occus!');
   res.send('this is a request for /user');
 });
 

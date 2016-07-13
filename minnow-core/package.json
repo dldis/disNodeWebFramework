@@ -1,0 +1,14 @@
+{
+  "name": "minnow-core",
+  "version": "1.0.0",
+  "description": "minnow core for util framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gaofei",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.1"
+  }
+}
