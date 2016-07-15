@@ -4,7 +4,6 @@
 'use strict';
 
 var path = require('path');
-var logpath = path.join(__dirname,'log/myapp-error.log');
 
 module.exports = {
   name: 'myapp',
@@ -25,7 +24,7 @@ module.exports = {
       level: 'error',
       type: 'rotating-file',
       period: '1d',
-      path: logpath,
+      path: path.join(__dirname,'log/myapp-error.log'),
       count: 10
     }
   ]

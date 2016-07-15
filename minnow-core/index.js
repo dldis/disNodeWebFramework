@@ -8,6 +8,8 @@ module.exports = {
   },
 
   framework: {
-    logger: require('./lib/log/log.js')
+    logger: require('./lib/log/log.js'),
+    error: require('./lib/error/error.js'),
+    server: require('./lib/server/server.js')
   }
 }
